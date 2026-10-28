@@ -79,7 +79,7 @@ elif app_mode == "🧠 محلل الذكاء الاصطناعي":
                     st.success("نتيجة التحليل الذكي:")
                     st.write(response.text)
                 except Exception as e:
-                    st.error(f حدث خطأ أثناء الاتصال بالذكاء الاصطناعي: {e}")
+                    st.error(f"حدث خطأ أثناء الاتصال بالذكاء الاصطناعي: {e}")
 
 # --- القسم الثالث: محفظة النسخ ---
 elif app_mode == "💼 محفظة النسخ (Copy Trading)":
