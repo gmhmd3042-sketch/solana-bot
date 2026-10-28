@@ -4,7 +4,7 @@ import random
 import time
 
 # إعداد صفحة المنصة لتكون متوافقة مع الهواتف
-st.set_page_title_co = st.set_page_config(
+st.set_page_config(
     page_title="مختبر البوتات - Solana Bot",
     page_icon="🤖",
     layout="wide",
@@ -15,8 +15,8 @@ st.set_page_title_co = st.set_page_config(
 st.sidebar.title("🤖 مختبر البوتات")
 st.sidebar.markdown("لوحة تحكم تداول وسائط سولانا بالذكاء الاصطناعي")
 
-# خانة إدخال مفتاح Gemini API
-api_key_input = st.sidebar.text_input("أدخل مفتاح Gemini API:", type="AQ.Ab8RN6J0OaeMEd4_tBzbIO62QGjlIVv7IUpppOlVOgreNOEGkA")
+# خانة إدخال مفتاح Gemini API (بدون تعارض)
+api_key_input = st.sidebar.text_input("AQ.Ab8RN6J0OaeMEd4_tBzbIO62QGjlIVv7IUpppOlVOgreNOEGkA")
 
 if api_key_input:
     genai.configure(api_key=api_key_input)
